@@ -1,0 +1,73 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+.body {
+  @apply bg-red-500 h-screen flex justify-center items-center md:bg-white;
+}
+
+.section {
+  @apply container mx-auto max-w-md md:max-w-xl xl:max-w-3xl;
+}
+
+.header {
+  @apply bg-red-500 rounded-t-xl h-16;
+}
+
+.header__title {
+  @apply h-16 flex justify-start items-center px-12;
+}
+
+.header__title--text {
+  @apply font-medium tracking-tighter text-white;
+}
+
+.login {
+  @apply border-x-2 border-red-500 w-full py-20 flex items-center justify-center bg-gray-50 lg:px-8;
+}
+
+.login__title-text {
+  @apply text-3xl tracking-tighter text-center py-2 font-semibold xl:pb-10;
+}
+
+.login__form {
+  @apply px-10 py-2 pt-3;
+}
+
+.login__form--box {
+  @apply px-4 border w-full my-0.5 text-sm border-gray-400 py-2.5 rounded-md tracking-tighter placeholder:tracking-tighter placeholder:text-gray-400;
+}
+
+.login__form--button {
+  @apply pt-3;
+}
+
+.login__notice {
+  @apply pt-3;
+}
+
+.login__notice--description {
+  @apply pt-3;
+}
+
+.login__notice--title {
+  @apply font-semibold tracking-tighter;
+}
+
+.login__notice--description-text {
+  @apply text-sm tracking-tighter;
+}
+
+.footer {
+  @apply border-b-2 border-x-2 rounded-b-xl py-5 border-red-500 bg-red-500 md:bg-white;
+}
+
+.footer__copyright {
+  @apply px-10 text-xs tracking-tighter md:text-black text-white;
+}
+
+.button {
+  @apply text-white  bg-black w-full py-2.5 px-2 border rounded-md;
+}
