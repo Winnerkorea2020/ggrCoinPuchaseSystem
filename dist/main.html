@@ -13,7 +13,7 @@
   </head>
   <body class="body">
     <div class="">
-      <div class="w-[1024px] bg-yellow-300">
+      <div class="w-[1024px]">
         <div
           class="bg-red-500 px-12 py-5 flex items-center justify-between rounded-t-2xl"
         >
@@ -28,12 +28,18 @@
           </div>
         </div>
         <div class="w-full grid grid-cols-2">
-          <div class="col-span-1 bg-red-300 py-2">
+          <!-- Left Items -->
+
+          <div
+            class="col-span-1 bg-red-200 pb-10 rounded-bl-2xl border-l border-b border-red-300"
+          >
             <div class="px-12">
-              <div class="text-xl py-5 tracking-tighter">
+              <div class="text-lg tracking-tighter py-3">
                 RPC MainNet System
               </div>
-              <div class="bg-white px-2 py-2 text-sm rounded-lg">
+              <div
+                class="bg-white px-6 py-5 text-sm rounded-lg grid grid-cols-1 gap-5"
+              >
                 <div
                   class="grid grid-cols-2 py-2 items-center tracking-tighter"
                 >
@@ -46,14 +52,14 @@
                 <div
                   class="grid grid-cols-2 py-2 items-center tracking-tighter"
                 >
-                  <div class="py-1.0 px-1 text-center">전체코인 구매</div>
+                  <div class="py-1.0 px-1 text-center">사용가능 코인</div>
                   <div class="py-1.0 px-1 text-end text-xl">
                     9,000,000,000 <span class="text-xs">개</span>
                   </div>
                 </div>
               </div>
               <div class="w-full">
-                <div class="py-2">1.결재(매수)금액선택</div>
+                <div class="tracking-tighter py-4">1. 결재(매수)금액선택</div>
                 <fieldset class="grid grid-cols-2 items-center w-full">
                   <div class="col-span-1">
                     <div class="flex justify-between items-center">
@@ -102,14 +108,110 @@
                 </fieldset>
               </div>
               <div class="w-full">
-                <div class="flex items-start justify-start">
-                  <div>2.주문[코인]수량</div>
-                  <div></div>
+                <div class="flex items-start justify-between py-4">
+                  <div class="basis-4/12 tracking-tighter">
+                    2. 주문[코인]수량
+                  </div>
+                  <div class="basis-8/12 flex flex-col">
+                    <input
+                      type="text"
+                      class="bg-gray-300 border border-gray-300 py-2 text-end px-2.5 rounded-md"
+                      disabled
+                      value="100,000"
+                    />
+                    <div
+                      class="text-xs tracking-tighter flex justify-between items-center py-1.5"
+                    >
+                      <div>최소주문금액:10,000 KRW</div>
+                      <div>Fee : 0% (free)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-full">
+                <div class="tracking-tighter py-4">3. 결재수단선택</div>
+                <div class="grid grid-cols-12">
+                  <div
+                    class="bg-red-500 text-white px-2 col-span-3 flex items-center justify-center"
+                  >
+                    일반결재
+                  </div>
+                  <div class="col-span-9 bg-white">
+                    <fieldset class="px-5 py-8">
+                      <div class="py-2">
+                        <input
+                          type="radio"
+                          id="huey"
+                          name="payments"
+                          value="huey"
+                        />
+                        <label for="huey">무통장입금</label>
+                      </div>
+
+                      <div class="py-2">
+                        <input
+                          type="radio"
+                          id="dewey"
+                          name="payments"
+                          value="dewey"
+                        />
+                        <label for="dewey">신용카드</label>
+                      </div>
+
+                      <div class="py-2">
+                        <input
+                          type="radio"
+                          id="louie"
+                          name="payments"
+                          value="louie"
+                          checked
+                        />
+                        <label for="louie">판매자 자동매칭</label>
+                      </div>
+                      <div class="py-2 flex items-center">
+                        <input
+                          type="radio"
+                          id="louie"
+                          name="payments"
+                          value="louie"
+                        />
+                        <img
+                          src="./assets/img/PayPal.svg.png"
+                          alt=""
+                          class="h-5 ml-2"
+                        />
+                      </div>
+                    </fieldset>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-span-1 bg-red-800"></div>
+
+          <!--  -->
+          <div
+            class="col-span-1 bg-white pb-10 rounded-br-2xl border-r border-b border-red-300"
+          >
+            <div class="grid grid-cols-1 gap-5 pt-8">
+              <div class="border-b-2 px-12 py-5 grid grid-cols-1 gap-3">
+                <div class="flex justify-between items-center">
+                  <div class="font-semibold text-lg">결재(매수)금액</div>
+                  <div class="text-lg text-red-500 font-semibold">
+                    2,000,000 <span class="text-black text-xs">원</span>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-sm tracking-tighter">주문[코인]수량</div>
+                  <div class="font-semibold">100,000</div>
+                </div>
+                <div class="flex justify-between items-center">
+                  <div class="text-sm tracking-tighter">결재수단</div>
+                  <div class="font-semibold">판매자 자동매칭</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
