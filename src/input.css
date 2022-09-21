@@ -21,7 +21,7 @@
 }
 
 .header__title--text {
-  @apply font-medium tracking-tighter text-white;
+  @apply tracking-tighter text-white font-semibold;
 }
 
 .login {
@@ -61,7 +61,11 @@
 }
 
 .footer {
-  @apply border-b-2 border-x-2 rounded-b-xl py-5 border-red-500 bg-red-500 md:bg-white;
+  @apply border-b-2 border-x-2 rounded-b-xl py-5 border-red-500 bg-red-500 md:bg-gray-50;
+}
+
+.footer_contents {
+  @apply flex flex-col md:flex-row justify-between items-center px-5 gap-5 md:gap-0;
 }
 
 .footer__copyright {
